@@ -1,0 +1,33 @@
+{
+    "name": "allocine/twigcs",
+    "description": "Checkstyle automation for Twig",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "OwlyCode",
+            "email": "tmaindron@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "twig/twig": "^1.0 || ^2.0",
+        "symfony/console": "^2.7 || ^3.0 || ^4.0",
+        "symfony/finder": "^2.7 || ^3.0 || ^4.0",
+        "pimple/pimple": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.2 || ^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Allocine\\Twigcs\\": "src/",
+            "Allocine\\Twigcs\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "bin": [
+        "bin/twigcs"
+    ]
+}
